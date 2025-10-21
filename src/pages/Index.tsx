@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ArrowLeft } from "lucide-react";
 import LandingHero from "@/components/LandingHero";
 import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
@@ -14,7 +15,16 @@ const Index = () => {
       {!showPortfolio ? (
         <LandingHero onReveal={() => setShowPortfolio(true)} />
       ) : (
-        <main className="animate-slide-in-diagonal">
+        <main className="animate-slide-in-diagonal relative">
+          {/* Back to Home Button */}
+          <button
+            onClick={() => setShowPortfolio(false)}
+            className="fixed top-6 left-6 z-50 p-3 bg-card border border-border rounded-full opacity-50 hover:opacity-100 hover:border-primary hover:shadow-glow transition-all duration-300 group"
+            aria-label="Back to home"
+          >
+            <ArrowLeft className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
+          </button>
+
           <AboutSection />
           <SkillsSection />
           <ExperienceSection />
