@@ -33,12 +33,13 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="mb-8 inline-block">
-          <div className="relative w-48 h-48 mx-auto">
+          <div className="relative w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 mx-auto">
             <div className="absolute inset-0 rounded-full bg-gradient-accent animate-glow-pulse" />
             <img
               src={profileImage}
               alt="Ahsan Mohammed"
-              className="relative w-full h-full rounded-full object-cover border-4 border-primary shadow-glow-strong"
+              className="relative w-full h-full rounded-full object-cover border-4 border-primary shadow-glow-strong transition-all duration-500 hover:scale-105 hover:border-primary/80 animate-fade-in"
+              style={{ animationDelay: "0.1s" }}
             />
           </div>
         </div>
