@@ -29,52 +29,63 @@ const ContactSection = () => {
           Get In <span className="text-primary">Touch</span>
         </h2>
 
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
-          {/* Contact Info */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-3xl font-serif font-bold mb-6 text-foreground">
-                Let's Work Together
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Whether you need video editing, photo manipulation, or document creation, 
-                I'm here to bring your vision to life. Reach out through any of these channels.
-              </p>
+        <div className="max-w-4xl mx-auto space-y-12">
+          {/* Get in Touch Button Section */}
+          <div className="flex flex-col items-center space-y-8">
+            <div className="relative group">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-12 py-8 text-xl rounded-2xl shadow-glow hover:shadow-glow-strong transition-all duration-500 hover:scale-105"
+              >
+                Get in Touch
+              </Button>
+              
+              {/* Contact Links - Appear on hover/click */}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-6 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-500 transform group-hover:translate-y-0 translate-y-4 pointer-events-none group-hover:pointer-events-auto">
+                <div className="flex flex-col gap-4 bg-card border-2 border-primary/50 rounded-2xl p-6 shadow-glow-strong backdrop-blur-sm min-w-[300px]">
+                  <a
+                    href="mailto:ahsanmohammed3343@gmail.com"
+                    className="flex items-center gap-4 p-4 bg-background/50 border border-border rounded-xl hover:border-primary hover:bg-primary/10 transition-all duration-300 group/link"
+                  >
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center group-hover/link:bg-primary/30 transition-colors">
+                      <Mail className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <p className="text-xs text-muted-foreground">Email</p>
+                      <p className="text-foreground font-semibold text-sm">ahsanmohammed3343@gmail.com</p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/aa_xsan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-background/50 border border-border rounded-xl hover:border-primary hover:bg-primary/10 transition-all duration-300 group/link"
+                  >
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center group-hover/link:bg-primary/30 transition-colors">
+                      <Instagram className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <p className="text-xs text-muted-foreground">Instagram</p>
+                      <p className="text-foreground font-semibold text-sm">@aa_xsan</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-6">
-              <a
-                href="mailto:ahsanmohammed3343@gmail.com"
-                className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary hover:shadow-glow transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Mail className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-foreground font-semibold">ahsanmohammed3343@gmail.com</p>
-                </div>
-              </a>
-
-              <a
-                href="https://www.instagram.com/aa_xsan/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary hover:shadow-glow transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Instagram className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Instagram</p>
-                  <p className="text-foreground font-semibold">@aa_xsan</p>
-                </div>
-              </a>
-            </div>
+            <p className="text-muted-foreground text-center max-w-2xl">
+              Whether you need video editing, photo manipulation, or document creation, 
+              I'm here to bring your vision to life. Hover over the button to see my contact options.
+            </p>
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 space-y-6">
+          <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 space-y-6 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-serif font-bold mb-4 text-foreground">
+              Send a Message
+            </h3>
+            
             <div>
               <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
                 Name
