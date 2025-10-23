@@ -24,7 +24,7 @@ const AboutSection = () => {
                     but during work, I always try to add a human touch to everything I make.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    I've created a biology book during my junior years, an Excel sheet for my freelance earnings, 
+                    I've created tons of digital notes, an Excel sheet for my freelance earnings, 
                     and some solid PowerPoint presentations. I'm also a digital artist, so I'm pretty good with 
                     creative visuals too. I can make websites as well, though I don't work on them much. 
                     Maybe we can get in touch, check out my socials!
