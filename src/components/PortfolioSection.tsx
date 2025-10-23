@@ -9,20 +9,6 @@ const projects = [
     category: "Video Editing",
   },
   {
-    icon: ImageIcon,
-    title: "Client Photo Edits",
-    count: "Multiple",
-    description: "Professional photo manipulation and enhancement for diverse client requirements",
-    category: "Photo Editing",
-  },
-  {
-    icon: FileText,
-    title: "Biology Question Book",
-    count: "1 Publication",
-    description: "Comprehensive educational resource on Blood Circulation created in Microsoft Word",
-    category: "Document Design",
-  },
-  {
     icon: Table,
     title: "Daily Earnings Tracker",
     count: "Ongoing",
@@ -35,6 +21,20 @@ const projects = [
     count: "Numerous",
     description: "Engaging PowerPoint presentations for educational purposes",
     category: "Presentation Design",
+  },
+  {
+    icon: ImageIcon,
+    title: "Client Photo Edits",
+    count: "Multiple",
+    description: "Professional photo manipulation and enhancement for diverse client requirements",
+    category: "Photo Editing",
+  },
+  {
+    icon: FileText,
+    title: "Biology Question Book",
+    count: "1 Publication",
+    description: "Comprehensive educational resource on Blood Circulation created in Microsoft Word",
+    category: "Document Design",
   },
 ];
 

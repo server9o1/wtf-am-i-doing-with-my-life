@@ -37,7 +37,7 @@ const Index = () => {
                 © 2025 Ahsan Mohammed. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground mt-2">
-                Night owl creative • Self-taught expert • Digital artist
+                Self-taught expert • Digital artist
               </p>
             </div>
           </footer>
