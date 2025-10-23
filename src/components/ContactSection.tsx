@@ -1,50 +1,11 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, Instagram, Send, Copy } from "lucide-react";
+import { Mail, Instagram, Copy } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import ParticlesBackground from "@/components/ParticlesBackground";
 
 const ContactSection = () => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    try {
-      console.log("Submitting contact form:", formData);
-      
-      const { supabase } = await import("@/integrations/supabase/client");
-      const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: formData,
-      });
-
-      if (error) throw error;
-
-      console.log("Email sent successfully:", data);
-      
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon!",
-      });
-      
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error: any) {
-      console.error("Error sending message:", error);
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive",
-      });
-    }
-  };
 
   return (
     <section id="contact" className="py-24 bg-gradient-primary relative overflow-hidden">
@@ -119,67 +80,6 @@ const ContactSection = () => {
               I'm here to bring your vision to life. Click the button to see my contact options.
             </p>
           </div>
-
-          {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="bg-card border border-border rounded-2xl p-8 space-y-6 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-serif font-bold mb-4 text-foreground">
-              Send a Message
-            </h3>
-            
-            <div>
-              <label htmlFor="name" className="block text-sm font-semibold text-foreground mb-2">
-                Name
-              </label>
-              <Input
-                id="name"
-                type="text"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="bg-background border-border focus:border-primary"
-                placeholder="Your name"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-foreground mb-2">
-                Email
-              </label>
-              <Input
-                id="email"
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="bg-background border-border focus:border-primary"
-                placeholder="your.email@example.com"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-foreground mb-2">
-                Message
-              </label>
-              <Textarea
-                id="message"
-                required
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="bg-background border-border focus:border-primary min-h-[150px]"
-                placeholder="Tell me about your project..."
-              />
-            </div>
-
-            <Button
-              type="submit"
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-6 rounded-xl shadow-glow hover:shadow-glow-strong transition-all duration-300 group"
-            >
-              <span className="flex items-center justify-center gap-2">
-                Send Message
-                <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </Button>
-          </form>
         </div>
       </div>
     </section>

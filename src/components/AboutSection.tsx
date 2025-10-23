@@ -1,4 +1,4 @@
-import { GraduationCap, Moon } from "lucide-react";
+import { GraduationCap, Palette } from "lucide-react";
 
 const AboutSection = () => {
   return (
@@ -12,13 +12,14 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-card border border-border rounded-2xl p-8 hover:shadow-glow transition-all duration-300">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                <Moon className="w-8 h-8 text-primary" />
+                <Palette className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-serif font-bold mb-4 text-foreground">Night Owl Creator</h3>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-foreground">Creative Editor</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm a night owl who mostly works on projects during midnights in silence. 
-                There's something magical about the quiet hours where creativity flows freely 
-                and focus comes naturally.
+                Hi there, I'm a CS student and great at editing videos, photos, and writing documents. 
+                I can edit high-resolution videos based on your needs, such as gaming, IRL content, or 
+                cooking videos. I also create thumbnails and manipulate photos. I'm great at using AI, 
+                but during work, I always try to add a human touch to everything I make.
               </p>
             </div>
 
@@ -37,9 +38,10 @@ const AboutSection = () => {
 
           <div className="mt-12 bg-secondary/50 border border-primary/20 rounded-2xl p-8 text-center">
             <p className="text-lg text-foreground leading-relaxed">
-              Self-taught in all my creative skills, I've dedicated years to mastering video editing, 
-              photo manipulation, and productivity tools. When challenges arise, I'm not afraid to seek 
-              guidance and learn from others, always striving to deliver professional results.
+              I've created a biology book during my junior years, an Excel sheet for my freelance earnings, 
+              and some solid PowerPoint presentations. I'm also a digital artist, so I'm pretty good with 
+              creative visuals too. I can make websites as well, though I don't work on them much. 
+              Maybe we can get in touch, check out my socials!
             </p>
           </div>
         </div>
