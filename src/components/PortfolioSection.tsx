@@ -9,20 +9,6 @@ const projects = [
     category: "Video Editing",
   },
   {
-    icon: Table,
-    title: "Daily Earnings Tracker",
-    count: "Ongoing",
-    description: "Professional Excel sheets for financial tracking and analysis",
-    category: "Data Management",
-  },
-  {
-    icon: FileText,
-    title: "Class Presentations",
-    count: "Numerous",
-    description: "Engaging PowerPoint presentations for educational purposes",
-    category: "Presentation Design",
-  },
-  {
     icon: ImageIcon,
     title: "Client Photo Edits",
     count: "Multiple",
@@ -35,6 +21,20 @@ const projects = [
     count: "1 Publication",
     description: "Comprehensive educational resource on Blood Circulation created in Microsoft Word",
     category: "Document Design",
+  },
+  {
+    icon: Table,
+    title: "Daily Earnings Tracker",
+    count: "Ongoing",
+    description: "Professional Excel sheets for financial tracking and analysis",
+    category: "Data Management",
+  },
+  {
+    icon: FileText,
+    title: "Class Presentations",
+    count: "Numerous",
+    description: "Engaging PowerPoint presentations for educational purposes",
+    category: "Presentation Design",
   },
 ];
 

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Instagram, Copy } from "lucide-react";
+import { Mail, Instagram, Copy, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import ParticlesBackground from "@/components/ParticlesBackground";
@@ -69,6 +69,21 @@ const ContactSection = () => {
                     <div className="flex-1 text-left">
                       <p className="text-xs text-muted-foreground">Instagram</p>
                       <p className="text-foreground font-semibold text-sm">@aa_xsan</p>
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://discordapp.com/users/861277171137249302"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-4 p-4 bg-background/50 border border-border rounded-xl hover:border-primary hover:bg-primary/10 transition-all duration-300 group/link"
+                  >
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center group-hover/link:bg-primary/30 transition-colors">
+                      <MessageCircle className="w-6 h-6 text-primary" />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <p className="text-xs text-muted-foreground">Discord</p>
+                      <p className="text-foreground font-semibold text-sm">Connect on Discord</p>
                     </div>
                   </a>
                 </div>
