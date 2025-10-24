@@ -44,7 +44,7 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
           </div>
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-serif font-bold mb-6 animate-fade-in">
+        <h1 className="text-7xl md:text-8xl font-serif font-bold mb-6 animate-fade-in">
           <span className="block text-foreground">Ahsan</span>
           <span className="block text-primary">Mohammed</span>
         </h1>
@@ -56,7 +56,7 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
         <Button
           onClick={handleReveal}
           size="lg"
-          className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-10 py-6 rounded-full shadow-glow transition-all duration-300 hover:shadow-glow-strong hover:scale-105 animate-fade-in"
+          className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-xl md:text-lg px-12 py-7 md:px-10 md:py-6 rounded-full shadow-glow transition-all duration-300 hover:shadow-glow-strong hover:scale-105 animate-fade-in"
           style={{ animationDelay: "0.4s" }}
         >
           <span className="relative z-10 flex items-center gap-2">
