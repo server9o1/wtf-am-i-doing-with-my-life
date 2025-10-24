@@ -36,6 +36,13 @@ const projects = [
     description: "Engaging PowerPoint presentations for educational purposes",
     category: "Presentation Design",
   },
+  {
+    icon: ImageIcon,
+    title: "Digital Arts",
+    count: "Various",
+    description: "Creative digital artwork and graphic design projects showcasing artistic skills",
+    category: "Digital Art",
+  },
 ];
 
 const PortfolioSection = () => {

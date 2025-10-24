@@ -15,7 +15,7 @@ const Index = () => {
       {!showPortfolio ? (
         <LandingHero onReveal={() => setShowPortfolio(true)} />
       ) : (
-        <main className="animate-slide-in-diagonal relative">
+        <main className="animate-slide-in-diagonal relative min-w-[1024px]">
           {/* Back to Home Button */}
           <button
             onClick={() => setShowPortfolio(false)}
