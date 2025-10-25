@@ -49,7 +49,7 @@ const PortfolioSection = () => {
   return (
     <section id="portfolio" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <h2 className="text-5xl md:text-6xl font-serif font-bold text-center mb-16 text-foreground">
+        <h2 className="text-5xl font-serif font-bold text-center mb-16 text-foreground">
           My <span className="text-primary">Portfolio</span>
         </h2>
 

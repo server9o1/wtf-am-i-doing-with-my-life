@@ -31,7 +31,7 @@ const ExperienceSection = () => {
   return (
     <section id="experience" className="py-24 bg-gradient-primary">
       <div className="container mx-auto px-6">
-        <h2 className="text-5xl md:text-6xl font-serif font-bold text-center mb-16 text-foreground">
+        <h2 className="text-5xl font-serif font-bold text-center mb-16 text-foreground">
           My <span className="text-primary">Journey</span>
         </h2>
 

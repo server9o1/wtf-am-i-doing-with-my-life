@@ -11,7 +11,7 @@ const ContactSection = () => {
     <section id="contact" className="py-24 bg-gradient-primary relative overflow-hidden">
       <ParticlesBackground />
       <div className="container mx-auto px-6 relative z-10">
-        <h2 className="text-5xl md:text-6xl font-serif font-bold text-center mb-16 text-foreground">
+        <h2 className="text-5xl font-serif font-bold text-center mb-16 text-foreground">
           Get In <span className="text-primary">Touch</span>
         </h2>
 
