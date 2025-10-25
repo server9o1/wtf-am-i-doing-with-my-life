@@ -32,8 +32,8 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-secondary/50" />
       
       <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="mb-8 inline-block">
-          <div className="relative w-48 h-48 mx-auto">
+        <div className="mb-6 sm:mb-8 inline-block">
+          <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto">
             <div className="absolute inset-0 rounded-full bg-gradient-accent animate-glow-pulse" />
             <img
               src={profileImage}
@@ -44,24 +44,24 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
           </div>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 sm:mb-8 animate-fade-in">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl font-serif font-bold mb-6 sm:mb-8 animate-fade-in leading-tight">
           <span className="block text-foreground">Ahsan</span>
           <span className="block text-primary">Mohammed</span>
         </h1>
 
-        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 sm:mb-16 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <p className="text-xl sm:text-2xl text-muted-foreground mb-12 sm:mb-16 animate-fade-in px-4" style={{ animationDelay: "0.2s" }}>
           Night owl editor & digital creator
         </p>
 
         <Button
           onClick={handleReveal}
           size="lg"
-          className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base sm:text-xl md:text-2xl px-8 sm:px-12 md:px-14 py-6 sm:py-7 md:py-8 rounded-full shadow-glow transition-all duration-300 hover:shadow-glow-strong hover:scale-105 animate-fade-in"
+          className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-xl sm:text-2xl px-10 sm:px-14 py-7 sm:py-8 rounded-full shadow-glow transition-all duration-300 hover:shadow-glow-strong hover:scale-105 animate-fade-in"
           style={{ animationDelay: "0.4s" }}
         >
           <span className="relative z-10 flex items-center gap-2">
             Explore Portfolio
-            <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:translate-y-1 transition-transform" />
+            <ChevronDown className="w-6 h-6 sm:w-7 sm:h-7 group-hover:translate-y-1 transition-transform" />
           </span>
           <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </Button>
