@@ -59,16 +59,11 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
           className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base sm:text-xl md:text-2xl px-8 sm:px-12 md:px-14 py-6 sm:py-7 md:py-8 rounded-full shadow-glow transition-all duration-300 hover:shadow-glow-strong hover:scale-105 animate-fade-in"
           style={{ animationDelay: "0.4s" }}
         >
-          <span className="relative z-10 flex items-center gap-2">
+          <span className="relative z-10">
             Explore Portfolio
-            <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:translate-y-1 transition-transform" />
           </span>
           <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </Button>
-
-        <div className="mt-20 animate-bounce">
-          <ChevronDown className="w-10 h-10 text-primary mx-auto" />
-        </div>
       </div>
 
       <style>{`
