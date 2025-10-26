@@ -44,27 +44,23 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
           </div>
         </div>
 
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 sm:mb-8 animate-fade-in">
-          <span className="block text-foreground">Ahsan</span>
-          <span className="block text-primary">Mohammed</span>
+        <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-serif font-bold mb-4 animate-fade-in text-white [text-shadow:_2px_2px_8px_rgb(0_0_0_/_60%)]">
+          Ahsan Mohammed
         </h1>
-
-        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 sm:mb-16 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          Night owl editor & digital creator
+        
+        <p className="text-lg sm:text-xl md:text-3xl text-white/90 mb-12 animate-fade-in [animation-delay:200ms] [text-shadow:_1px_1px_4px_rgb(0_0_0_/_50%)]">
+          Night Owl Creative & Digital Artist
         </p>
 
-        <Button
+        <button
           onClick={handleReveal}
-          size="lg"
-          className="group relative overflow-hidden bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base sm:text-xl md:text-2xl px-8 sm:px-12 md:px-14 py-6 sm:py-7 md:py-8 rounded-full shadow-glow transition-all duration-300 hover:shadow-glow-strong hover:scale-105 animate-fade-in"
-          style={{ animationDelay: "0.4s" }}
+          className="group relative px-8 sm:px-12 md:px-20 py-3 sm:py-4 md:py-8 text-base sm:text-xl md:text-3xl font-semibold rounded-full bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white hover:text-primary transition-all duration-500 animate-fade-in [animation-delay:400ms] hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
         >
-          <span className="relative z-10 flex items-center gap-2">
+          <span className="flex items-center gap-2">
             Explore Portfolio
-            <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 group-hover:translate-y-1 transition-transform" />
+            <ChevronDown className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 group-hover:translate-y-1 transition-transform" />
           </span>
-          <div className="absolute inset-0 bg-gradient-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-        </Button>
+        </button>
 
         <div className="mt-20 animate-bounce">
           <ChevronDown className="w-10 h-10 text-primary mx-auto" />
