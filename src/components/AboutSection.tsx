@@ -16,14 +16,13 @@ const AboutSection = () => {
                   <Palette className="w-10 h-10 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-3xl font-serif font-bold mb-4 text-foreground">Creative Editor</h3>
-                  <p className="text-xl text-muted-foreground leading-relaxed mb-4">
+                  <h3 className="text-2xl font-serif font-bold mb-3 text-foreground">Creative Editor</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-3">
                     Hi there, I'm a CS student and great at editing videos, photos, and writing documents. 
                     I can edit high-resolution videos based on your needs, such as gaming, IRL content, or 
-                    cooking videos. I also create thumbnails and manipulate photos. I'm great at using AI, 
-                    but during work, I always try to add a human touch to everything I make.
+                    cooking videos. I also create thumbnails and manipulate photos.
                   </p>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
                     I've created tons of digital notes, an Excel sheet for my freelance earnings, 
                     and some solid PowerPoint presentations. I'm also a digital artist, so I'm pretty good with 
                     creative visuals too. I can make websites as well, though I don't work on them much. 
@@ -39,8 +38,8 @@ const AboutSection = () => {
                   <GraduationCap className="w-10 h-10 text-primary" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-3xl font-serif font-bold mb-4 text-foreground">Academic Excellence</h3>
-                  <p className="text-xl text-muted-foreground leading-relaxed">
+                  <h3 className="text-2xl font-serif font-bold mb-3 text-foreground">Academic Excellence</h3>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
                     Recent IGCSE graduate with an A grade. My dedication to learning extends beyond 
                     academics into mastering industry-standard creative software through self-teaching 
                     and continuous practice.
