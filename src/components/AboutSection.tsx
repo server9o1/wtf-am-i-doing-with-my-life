@@ -20,7 +20,8 @@ const AboutSection = () => {
                   <p className="text-xl text-muted-foreground leading-relaxed mb-4">
                     Hi there, I'm a CS student and great at editing videos, photos, and writing documents. 
                     I can edit high-resolution videos based on your needs, such as gaming, IRL content, or 
-                    cooking videos. I also create thumbnails and manipulate photos.
+                    cooking videos. I also create thumbnails and manipulate photos. I'm great at using AI, 
+                    but during work, I always try to add a human touch to everything I make.
                   </p>
                   <p className="text-xl text-muted-foreground leading-relaxed">
                     I've created tons of digital notes, an Excel sheet for my freelance earnings, 
