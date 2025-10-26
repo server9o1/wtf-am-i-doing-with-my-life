@@ -11,9 +11,9 @@ const AboutSection = () => {
 
           <div className="space-y-8">
             <div className="bg-card border border-border rounded-2xl p-8 hover:shadow-glow transition-all duration-300">
-              <div className="flex items-start gap-6">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Palette className="w-10 h-10 text-primary" />
+              <div className="flex items-start gap-8">
+                <div className="w-28 h-28 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Palette className="w-14 h-14 text-primary" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-3xl font-serif font-bold mb-4 text-foreground">Creative Editor</h3>
@@ -34,9 +34,9 @@ const AboutSection = () => {
             </div>
 
             <div className="bg-card border border-border rounded-2xl p-8 hover:shadow-glow transition-all duration-300">
-              <div className="flex items-start gap-6">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <GraduationCap className="w-10 h-10 text-primary" />
+              <div className="flex items-start gap-8">
+                <div className="w-28 h-28 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <GraduationCap className="w-14 h-14 text-primary" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-3xl font-serif font-bold mb-4 text-foreground">Academic Excellence</h3>

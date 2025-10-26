@@ -33,7 +33,7 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="mb-6 sm:mb-8 inline-block">
-          <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto">
+          <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto">
             <div className="absolute inset-0 rounded-full bg-gradient-accent animate-glow-pulse" />
             <img
               src={profileImage}
