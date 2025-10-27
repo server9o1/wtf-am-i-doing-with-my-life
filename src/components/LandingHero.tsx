@@ -49,7 +49,7 @@ const LandingHero = ({ onReveal }: LandingHeroProps) => {
           <span className="block text-primary">Mohammed</span>
         </h1>
 
-        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-12 sm:mb-16 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 sm:mb-10 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           Night owl editor & digital creator
         </p>
 
