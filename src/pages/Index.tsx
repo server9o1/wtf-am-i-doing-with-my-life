@@ -33,9 +33,9 @@ const Index = () => {
           
           <footer className="bg-background border-t border-border py-8">
             <div className="container mx-auto px-6 text-center">
-              <p className="text-muted-foreground">
-                © 2025 Ahsan Mohammed. All rights reserved.
-              </p>
+                <p className="text-muted-foreground">
+                  © 2026 Ahsan Mohammed. All rights reserved.
+                </p>
               <p className="text-sm text-muted-foreground mt-2">
                 Self-taught expert • Digital artist
               </p>
