@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import LandingHero from "@/components/LandingHero";
 import AboutSection from "@/components/AboutSection";
-import SkillsSection from "@/components/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import ContactSection from "@/components/ContactSection";
@@ -26,7 +25,6 @@ const Index = () => {
           </button>
 
           <AboutSection />
-          <SkillsSection />
           <ExperienceSection />
           <PortfolioSection />
           <ContactSection />
