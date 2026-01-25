@@ -28,6 +28,12 @@ const experiences = [
     duration: "7 months",
     description: "Creating dynamic motion graphics and visual effects",
   },
+  {
+    skill: "UI/UX Web Designer & Builder",
+    tools: "Web Design & Development",
+    duration: "2 years",
+    description: "Creating modern, user-friendly websites with positive client feedback and satisfaction",
+  },
 ];
 
 const certificates = [
