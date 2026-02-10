@@ -7,25 +7,25 @@ const experiences = [
   {
     skill: "Microsoft Office Suite",
     tools: "Word, Excel, PowerPoint",
-    duration: "8 years",
+    duration: "9 years",
     description: "Mastered document creation, data analysis, and professional presentations",
   },
   {
     skill: "Adobe Premiere Pro",
     tools: "Video Editing",
-    duration: "6 years",
+    duration: "7 years",
     description: "Professional video editing including 50+ AMV edits and client projects",
   },
   {
     skill: "Adobe Photoshop CC",
     tools: "Photo Editing",
-    duration: "3 years",
+    duration: "4 years",
     description: "Advanced photo manipulation and design for diverse client needs",
   },
   {
     skill: "Adobe After Effects",
     tools: "Motion Graphics",
-    duration: "7 months",
+    duration: "2 years",
     description: "Creating dynamic motion graphics and visual effects",
   },
   {
